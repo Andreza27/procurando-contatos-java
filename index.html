@@ -11,7 +11,16 @@
     <input placeholder="Digite o nome do contato">
     <p></p>
 
-    <button> Procurar Contato </button>
+    <button onclick="search()"> Procurar Contato </button>
 </body>
+<script>
+    let p = document.querySelector('p')
+    let input = document.querySelector('input')
+
+function search(){
+    console.log(input.value)
+}
+
+</script>
 
 </html>
