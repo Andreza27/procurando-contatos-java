@@ -19,16 +19,25 @@
 
    const Contato = [
  
-     { name:"bryan", number:"(11) 95588-6677"  },
-     { name:"andrea", number:"(11) 95588-9977"  },
-     { name:"tatiana", number:"(11) 95544-6677"  },
-     { name:"gabriel", number:"(11) 92288-6677"  },
+     { name:"Bryan", number:"(11) 95588-6677"  },
+     { name:"Andrea", number:"(11) 95588-9977"  },
+     { name:"Tatiana", number:"(11) 95544-6677"  },
+     { name:"Gabriel", number:"(11) 92288-6677"  },
 
 ]
 
-function search(){
+        function search(){
     
-    for(let i = 0; i < Contato.length  ;i++ )
+        for(let i = 0; i < Contato.length  ;i++ ){
+
+            if(input.value === Contato[i].name){
+               p.innerHTML = `Contato Encontrado Nome:${Contato[i].name} Tel: ${Contato[i].number}`
+
+               break
+            } else {
+                p.innerHTML = "Contato não encontrado, tente novamente"
+            }
+        }
 }
 
 </script>
